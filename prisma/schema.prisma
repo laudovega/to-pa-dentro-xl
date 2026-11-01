@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Recipe {
+  id            String        @id @default(cuid())
+  slug          String        @unique
+  title         String
+  description   String?
+  servings      Int           @default(4)
+  prepMinutes   Int           @default(10)
+  cookMinutes   Int           @default(30)
+  lazinessScore Int           @default(8)
+  onePot        Boolean       @default(true)
+  tags          String[]      @default([])
+  ingredients   Ingredient[]
+  phases        RecipePhase[]
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model Ingredient {
+  id       String  @id @default(cuid())
+  recipeId String
+  recipe   Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  name     String
+  amount   Float?
+  unit     String?
+  note     String?
+  optional Boolean @default(false)
+}
+
+model RecipePhase {
+  id             String   @id @default(cuid())
+  recipeId       String
+  recipe         Recipe   @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  order          Int
+  title          String
+  action         String
+  speed          Int?
+  reverse        Boolean  @default(false)
+  temperatureC   Int?
+  minutes        Int      @default(0)
+  lid            String   @default("closed")
+  ingredients    Json     @default("[]")
+  expectedResult String?
+  tips           String[] @default([])
+}
+
+model PantryItem {
+  id           String   @id @default(cuid())
+  name         String   @unique
+  category     String   @default("Otros")
+  trackingMode String   @default("presence")
+  have         Boolean  @default(false)
+  quantity     Float?
+  unit         String?
+  lowThreshold Float?
+  aliases      String[] @default([])
+  movements    Movement[]
+}
+
+model ShoppingItem {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  source    String   @default("manual")
+  purchased Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model CookingSession {
+  id        String     @id @default(cuid())
+  date      DateTime   @default(now())
+  closed    Boolean    @default(false)
+  movements Movement[]
+}
+
+model Movement {
+  id           String         @id @default(cuid())
+  sessionId    String
+  session      CookingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  pantryItemId String
+  pantryItem   PantryItem     @relation(fields: [pantryItemId], references: [id], onDelete: Cascade)
+  recipeId     String?
+  change       Float
+  unit         String?
+  createdAt    DateTime       @default(now())
+}

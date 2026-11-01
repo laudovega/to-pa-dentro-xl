@@ -1,0 +1,386 @@
+[
+  {
+    "slug": "lentejas-estofadas-xl",
+    "title": "Lentejas estofadas XL",
+    "description": "Guiso de lentejas con sofrito, chorizo y verduras. Una jarra, cero dramas.",
+    "servings": 6,
+    "prepMinutes": 10,
+    "cookMinutes": 46,
+    "lazinessScore": 9,
+    "onePot": true,
+    "tags": [
+      "legumbres",
+      "XL",
+      "sin accesorios",
+      "tupper friendly"
+    ],
+    "ingredients": [
+      {
+        "name": "Lentejas pardinas",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Cebolla",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Ajo",
+        "amount": 2,
+        "unit": "dientes"
+      },
+      {
+        "name": "Zanahoria",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Puerro",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Chorizo",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Pimentón dulce",
+        "amount": 1,
+        "unit": "cucharadita"
+      },
+      {
+        "name": "Comino molido",
+        "amount": 1,
+        "unit": "cucharadita"
+      },
+      {
+        "name": "Agua o caldo",
+        "amount": 900,
+        "unit": "ml"
+      },
+      {
+        "name": "Aceite de oliva",
+        "amount": 2,
+        "unit": "cucharadas"
+      },
+      {
+        "name": "Sal",
+        "note": "al gusto"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Sofrito base",
+        "action": "rehogar",
+        "ingredients": [
+          "Aceite de oliva",
+          "Cebolla",
+          "Ajo",
+          "Zanahoria",
+          "Puerro"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 120,
+        "minutes": 8,
+        "lid": "closed",
+        "expectedResult": "Verdura pochada y translúcida",
+        "tips": [
+          "Que la cebolla no se dore demasiado"
+        ]
+      },
+      {
+        "title": "Chorizo y pimentón",
+        "action": "rehogar",
+        "ingredients": [
+          "Chorizo",
+          "Pimentón dulce"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 120,
+        "minutes": 3,
+        "lid": "closed",
+        "expectedResult": "Chorizo soltado y pimentón aromático",
+        "tips": [
+          "El pimentón solo unos minutos para que no amargue"
+        ]
+      },
+      {
+        "title": "Cocción",
+        "action": "cocer",
+        "ingredients": [
+          "Lentejas pardinas",
+          "Agua o caldo",
+          "Comino molido",
+          "Sal"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 100,
+        "minutes": 35,
+        "lid": "closed",
+        "expectedResult": "Lentejas tiernas y caldo espeso",
+        "tips": [
+          "Si quedan duras, 5-10 min más a 100 °C"
+        ]
+      },
+      {
+        "title": "Reposo",
+        "action": "reposar",
+        "ingredients": [],
+        "speed": null,
+        "reverse": false,
+        "temperatureC": null,
+        "minutes": 10,
+        "lid": "closed",
+        "expectedResult": "Guiso más espeso y sabroso",
+        "tips": []
+      }
+    ]
+  },
+  {
+    "slug": "arroz-caldoso-de-pollo",
+    "title": "Arroz caldoso de pollo y verduras",
+    "description": "Arroz bomba con pollo, sofrito y caldo. XL y directamente de la jarra.",
+    "servings": 5,
+    "prepMinutes": 10,
+    "cookMinutes": 30,
+    "lazinessScore": 8,
+    "onePot": true,
+    "tags": [
+      "arroz",
+      "pollo",
+      "XL",
+      "sin accesorios"
+    ],
+    "ingredients": [
+      {
+        "name": "Muslos de pollo",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "name": "Arroz bomba",
+        "amount": 320,
+        "unit": "g"
+      },
+      {
+        "name": "Cebolla",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Pimiento verde",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Tomate maduro",
+        "amount": 2,
+        "unit": "unidades"
+      },
+      {
+        "name": "Ajo",
+        "amount": 2,
+        "unit": "dientes"
+      },
+      {
+        "name": "Judía verde congelada",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Caldo de pollo",
+        "amount": 1200,
+        "unit": "ml"
+      },
+      {
+        "name": "Pimentón dulce",
+        "amount": 1,
+        "unit": "cucharadita"
+      },
+      {
+        "name": "Azafrán o colorante",
+        "note": "al gusto"
+      },
+      {
+        "name": "Aceite de oliva",
+        "amount": 2,
+        "unit": "cucharadas"
+      },
+      {
+        "name": "Sal",
+        "note": "al gusto"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Sofrito",
+        "action": "rehogar",
+        "ingredients": [
+          "Aceite de oliva",
+          "Cebolla",
+          "Ajo",
+          "Pimiento verde",
+          "Tomate maduro"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 120,
+        "minutes": 8,
+        "lid": "closed",
+        "expectedResult": "Verdura pochada y tomate integrado",
+        "tips": []
+      },
+      {
+        "title": "Pollo y pimentón",
+        "action": "rehogar",
+        "ingredients": [
+          "Muslos de pollo",
+          "Pimentón dulce"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 120,
+        "minutes": 5,
+        "lid": "closed",
+        "expectedResult": "Pollo sellado por fuera",
+        "tips": []
+      },
+      {
+        "title": "Arroz",
+        "action": "cocer",
+        "ingredients": [
+          "Arroz bomba",
+          "Caldo de pollo",
+          "Judía verde congelada",
+          "Azafrán o colorante",
+          "Sal"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 100,
+        "minutes": 18,
+        "lid": "closed",
+        "expectedResult": "Arroz tierno y caldoso",
+        "tips": [
+          "Dejar reposar 5 minutos antes de abrir"
+        ]
+      },
+      {
+        "title": "Reposo",
+        "action": "reposar",
+        "ingredients": [],
+        "speed": null,
+        "reverse": false,
+        "temperatureC": null,
+        "minutes": 5,
+        "lid": "closed",
+        "expectedResult": "Arroz asentado",
+        "tips": []
+      }
+    ]
+  },
+  {
+    "slug": "crema-de-calabaza-y-coco",
+    "title": "Crema de calabaza, zanahoria y coco",
+    "description": "Crema XL sin colador ni escurrir nada.",
+    "servings": 5,
+    "prepMinutes": 8,
+    "cookMinutes": 28,
+    "lazinessScore": 10,
+    "onePot": true,
+    "tags": [
+      "cremas",
+      "vegano",
+      "congelados",
+      "sin accesorios"
+    ],
+    "ingredients": [
+      {
+        "name": "Calabaza",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "name": "Zanahoria",
+        "amount": 2,
+        "unit": "unidades"
+      },
+      {
+        "name": "Puerro",
+        "amount": 1,
+        "unit": "unidad"
+      },
+      {
+        "name": "Patata",
+        "amount": 1,
+        "unit": "pequeña"
+      },
+      {
+        "name": "Caldo o agua",
+        "amount": 700,
+        "unit": "ml"
+      },
+      {
+        "name": "Leche de coco",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "Sal",
+        "note": "al gusto"
+      },
+      {
+        "name": "Pimienta",
+        "note": "al gusto"
+      },
+      {
+        "name": "Nuez moscada",
+        "note": "una pizca"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Cocción",
+        "action": "cocer",
+        "ingredients": [
+          "Calabaza",
+          "Zanahoria",
+          "Puerro",
+          "Patata",
+          "Caldo o agua",
+          "Sal",
+          "Pimienta",
+          "Nuez moscada"
+        ],
+        "speed": 1,
+        "reverse": true,
+        "temperatureC": 100,
+        "minutes": 25,
+        "lid": "closed",
+        "expectedResult": "Verduras muy tiernas",
+        "tips": []
+      },
+      {
+        "title": "Triturar",
+        "action": "triturar",
+        "ingredients": [
+          "Leche de coco"
+        ],
+        "speed": 8,
+        "reverse": false,
+        "temperatureC": null,
+        "minutes": 1,
+        "lid": "closed",
+        "expectedResult": "Crema fina y homogénea",
+        "tips": [
+          "Subir velocidad progresivamente"
+        ]
+      }
+    ]
+  }
+]
